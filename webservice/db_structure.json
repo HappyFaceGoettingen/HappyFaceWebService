@@ -1,0 +1,240 @@
+[
+    {
+        "module_table_name": "mod_nagios", 
+        "module_name": "Nagios", 
+        "subtables": [
+            {
+                "subtable_columns": [
+                    "id", 
+                    "parent_id", 
+                    "host_name", 
+                    "host_link", 
+                    "service_name", 
+                    "service_link", 
+                    "status_short", 
+                    "status_long", 
+                    "status_machine_readable", 
+                    "lastcheck", 
+                    "lastcheck_duration", 
+                    "attempt"
+                ], 
+                "subtable_name": "sub_nagios_services"
+            }
+        ], 
+        "module_table_columns": [
+            "id", 
+            "instance", 
+            "run_id", 
+            "status", 
+            "description", 
+            "instruction", 
+            "error_string", 
+            "source_url", 
+            "nagios_url", 
+            "services_ok", 
+            "services_not_ok", 
+            "services_critical"
+        ]
+    }, 
+    {
+        "module_table_name": "mod_panda", 
+        "module_name": "Panda", 
+        "subtables": [
+            {
+                "subtable_columns": [
+                    "id", 
+                    "parent_id", 
+                    "site_name", 
+                    "queue_name", 
+                    "queue_link", 
+                    "queue_type", 
+                    "efficiency", 
+                    "status", 
+                    "active_jobs", 
+                    "running_jobs", 
+                    "defined_jobs", 
+                    "holding_jobs", 
+                    "finished_jobs", 
+                    "failed_jobs", 
+                    "cancelled_jobs"
+                ], 
+                "subtable_name": "sub_panda_site_details"
+            }
+        ], 
+        "module_table_columns": [
+            "id", 
+            "instance", 
+            "run_id", 
+            "status", 
+            "description", 
+            "instruction", 
+            "error_string", 
+            "source_url", 
+            "site_names"
+        ]
+    }, 
+    {
+        "module_table_name": "mod_apel", 
+        "module_name": "Apel", 
+        "subtables": [
+            {
+                "subtable_columns": [
+                    "id", 
+                    "parent_id", 
+                    "record_start", 
+                    "record_end", 
+                    "record_count_database", 
+                    "record_count_published", 
+                    "sync_status"
+                ], 
+                "subtable_name": "sub_apel_details_table"
+            }
+        ], 
+        "module_table_columns": [
+            "id", 
+            "instance", 
+            "run_id", 
+            "status", 
+            "description", 
+            "instruction", 
+            "error_string", 
+            "source_url", 
+            "source_html", 
+            "source_xml", 
+            "apel_title", 
+            "apel_description", 
+            "apel_link"
+        ]
+    }, 
+    {
+        "module_table_name": "mod_ddm", 
+        "module_name": "DDM", 
+        "subtables": [
+            {
+                "subtable_columns": [
+                    "id", 
+                    "parent_id", 
+                    "token", 
+                    "successful", 
+                    "failed", 
+                    "throughput", 
+                    "efficiency"
+                ], 
+                "subtable_name": "sub_ddm_destination_details_table"
+            }, 
+            {
+                "subtable_columns": [
+                    "id", 
+                    "parent_id", 
+                    "token", 
+                    "successful", 
+                    "failed", 
+                    "throughput", 
+                    "efficiency"
+                ], 
+                "subtable_name": "sub_ddm_source_details_table"
+            }
+        ], 
+        "module_table_columns": [
+            "id", 
+            "instance", 
+            "run_id", 
+            "status", 
+            "description", 
+            "instruction", 
+            "error_string", 
+            "source_url", 
+            "site_name", 
+            "cloud", 
+            "time_interval", 
+            "url_destination_space_tokens", 
+            "url_source_space_tokens", 
+            "url_destination_failed_transfers", 
+            "url_source_failed_transfers", 
+            "destination_successful_transfers_total", 
+            "source_successful_transfers_total", 
+            "destination_failed_transfers_total", 
+            "source_failed_transfers_total", 
+            "destination_throughput_total", 
+            "source_throughput_total", 
+            "destination_failures_total", 
+            "source_failures_total", 
+            "destination_efficiency_total", 
+            "source_efficiency_total"
+        ]
+    }, 
+    {
+        "module_table_name": "mod_sam__goe", 
+        "module_name": "Sam_Goe", 
+        "subtables": [
+            {
+                "subtable_columns": [
+                    "id", 
+                    "parent_id", 
+                    "vo_name", 
+                    "profile_name", 
+                    "service_hostname", 
+                    "type", 
+                    "name", 
+                    "status", 
+                    "output_summary", 
+                    "execution_time"
+                ], 
+                "subtable_name": "sub_sam__goe_test_details"
+            }
+        ], 
+        "module_table_columns": [
+            "id", 
+            "instance", 
+            "run_id", 
+            "status", 
+            "description", 
+            "instruction", 
+            "error_string", 
+            "source_url", 
+            "sam_url"
+        ]
+    }, 
+    {
+        "module_table_name": "mod_functional__tests", 
+        "module_name": "Functional_Tests", 
+        "subtables": [
+            {
+                "subtable_columns": [
+                    "id", 
+                    "parent_id", 
+                    "queue_name", 
+                    "status", 
+                    "link"
+                ], 
+                "subtable_name": "sub_functional__tests_aft_details"
+            }, 
+            {
+                "subtable_columns": [
+                    "id", 
+                    "parent_id", 
+                    "queue_name", 
+                    "status", 
+                    "link"
+                ], 
+                "subtable_name": "sub_functional__tests_pft_details"
+            }
+        ], 
+        "module_table_columns": [
+            "id", 
+            "instance", 
+            "run_id", 
+            "status", 
+            "description", 
+            "instruction", 
+            "error_string", 
+            "source_url", 
+            "url_aft", 
+            "url_pft", 
+            "queues_aft", 
+            "queues_pft", 
+            "status_aft", 
+            "status_pft"
+        ]
+    }
+]
